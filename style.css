@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Texturina';
+    background-image: url('./Background.jpg');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+}
+
+header img {
+    width: 180px;
+    padding-top: 10px;
+}
+
+header nav {}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header button {
+    background-color: white;
+    color: #167B63;
+    border: none;
+    font-weight: bold;
+    height: 40px;
+    width: 8%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.drop-down {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    display: none;
+}
+
+.drop-down div {
+
+    border-radius: 3px;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.page-title h1 {
+    width: 45%;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 15vh;
+}
