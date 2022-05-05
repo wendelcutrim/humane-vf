@@ -6,10 +6,17 @@
     padding: 0;
 }
 
+.container {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Texturina';
     background-image: url('./Background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -34,13 +41,13 @@ header nav a {
     padding: 10px;
 }
 
-header button {
+#primary-button {
     background-color: white;
     color: #167B63;
     border: none;
     font-weight: bold;
-    height: 40px;
-    width: 8%;
+    padding: 10px;
+    width: 10rem;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -50,6 +57,7 @@ header button {
     height: 40px;
     width: 40px;
     display: none;
+    border: none;
 }
 
 .drop-down div {
@@ -74,5 +82,143 @@ header button {
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 7rem;
+}
+
+.page-title h3{
+    font-weight: 400;
+    width: 40%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page-title-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.page-title-button button{
+    margin: 0 15px 0 0 
+}
+
+#secundary-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    padding: 10px;
+    width: 10rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.texth3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.texth3 h3{
+    color: white;
+    font-weight: lighter;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+   
+    body {
+        font-family: 'Texturina';
+        background-image: url('./Background.jpg');
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    header img {
+        width: 160px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    header img {
+        width: 160px;
+        padding-top: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header #primary-button {
+        display: none;
+    }
+
+    .drop-down {
+        display: block;
+    }
+
+    .page-title h1 {
+        width: 80%;
+    }
+    
+    .page-title h3{
+        width: 65%;
+    }
+
+    #primary-button {
+        width: 15rem;
+    }
+
+    #secundary-button {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html{
+        font-size: 11px;
+    }
+    body {
+        background-size: auto;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .page-title-button {
+        flex-direction: column;
+    }
+
+    .page-title-button button{
+        margin: 10px;
+    }
+
+    #primary-button {
+        width: 80%
+    }
+
+    #secundary-button {
+        width: 80%
+    }
+
 }
