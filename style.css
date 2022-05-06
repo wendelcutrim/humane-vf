@@ -116,7 +116,7 @@ header nav a {
     cursor: pointer;
 }
 
-.texth3 {
+.footer-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -125,7 +125,7 @@ header nav a {
     margin-top: 7rem;
 }
 
-.texth3 h3{
+.footer-text h3{
     color: white;
     font-weight: lighter;
 }
