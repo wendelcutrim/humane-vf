@@ -13,6 +13,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.container {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -35,15 +41,26 @@ header nav a {
     padding: 10px;
 }
 
-header button {
+#primary-button {
     background-color: white;
     color: #167B63;
     border: none;
     font-weight: bold;
-    height: 40px;
-    width: 8%;
+    width: 10rem;
     border-radius: 8px;
     cursor: pointer;
+    padding: 10px;
+}
+
+#secundary-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    width: 10rem;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .drop-down {
@@ -76,4 +93,38 @@ header button {
     font-size: 3rem;
     text-align: center;
     margin-top: 7rem;
+}
+
+.page-title h3 {
+    font-weight: lighter;
+    width: 40%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.page-title-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page-title-button button {
+    margin: 0 15px 0 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6rem;
+    
+}
+
+
+.footer-text h3 {
+    color: white;
+    font-weight: lighter;
 }
