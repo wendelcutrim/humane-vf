@@ -10,6 +10,7 @@ body {
     font-family: 'Texturina';
     background-image: url('./Background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -74,5 +75,5 @@ header button {
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 7rem;
 }
